@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> cadastre-se em nosso site </title>
+</head>
+<body>
+    <h2> cadastre-se em nosso site </h2>
+    <a href="index.html" target="_top" title="Voltar a pagina"> Home </a>
+    <br/>
+    <a href="sobre.html" target="_top" title="Voltar a pagina"> Sobre </a>
+    <br/>
+    <a href="contato.html" target="_top" title="Voltar a pagina"> Contato </a>
+    <br/>
+
+
+
+    <body bgcolor="lightblue" background="">
+        <h2 align=" center"> <font color="white"> cadastro pessoal </font> </h2>
+          <table witdth="500" align="center" bgcolor="lightgray" background="">
+            <tr><td>
+            <fieldset>
+            <legend> Informe seus Dados </legend>
+            <form action="" method="post">
+                <label> Nome: </label>
+                <input type="text" name="nome" id="nome" maxlength="80" size="30" placeholder="Digite seu Nome" required>
+                <br><br/>
+                <label> CPF: </label>
+                <input type="text" name="cpf" id="cpf" maxlength="80" size="30" placeholder="Digite seu CPF" required>
+                <br><br/>
+                <label> E-mail </label>
+                <input type="email" name="mail" id="mail" maxlength="80" size="30" placeholder="Digite seu E-mail" required>
+                <br><br/>
+                <label> Telefone </label>
+                <input type="tel" name="fone" id="fone" maxlength="80" size="30" placeholder="Digite seu Telefone" required>
+                <br><br/>
+                <label> Data de Nascimento </label>
+                <input type="date" name="data_nasc" id="data_nasc" min="1900-01-01" max="2006-06-25" />
+                <br><br/>
+                <label> Senha </label>
+                <input type="password" name=" senha " id=" senha " maxlength="60" size="30" placeholder="Informe uma Senha " required>
+                <br><br/>
+                <label> Sexo </label>
+                
+                <label> Cidade: </label>
+                <select name="cidade" id="cidade" required>
+                    <option value="" selected="selected"> --Selecione-- </option>
+                    <option value="BH"> Belo Horizonte </option>
+                    <option value="NL"> Nova Lima </option>
+                    <option value="SB"> Sabará </option>
+                    <option value="RP"> Raposos </option>
+                    <option value="RC"> rio Acima </option>
+                </select>
+                <br/> <br/>
+                <label> Duvidas, Criticas ou Elogios comentem  </label>
+                <br/>
+                <textarea name="coment" id="coment" cols="40" rows="10" maxlength="200" placeholder=" Digite Seu Comentario" required></textarea>
+                <br/> <br/>
+                <input type="submit" value="enviar" id="enviar" value="ENVIAR">
+                <input type="submit" value="limpar" id="limpar" value="LIMPAR">
+                <input type="submit" value="resert" id="resert" value="resert">
+</body>
+</html>
